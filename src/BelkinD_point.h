@@ -11,20 +11,20 @@ public:
 
     friend Vector operator - (const Point & p1, const Point & p2)
     {
-        return Vector(p1.x() - p2.x(), p1.y() - p2.y(), p1.z() - p2.z());
+        return Vector(p1.X() - p2.X(), p1.Y() - p2.Y(), p1.Z() - p2.Z());
     }
 
-    double x() const { return x1(); }
-    double y() const { return y1(); }
-    double z() const { return z1(); }
+    double X() const { return X1(); }
+    double Y() const { return Y1(); }
+    double Z() const { return Z1(); }
 
-    void setX(const double x) { setX1(x); }
-    void setY(const double y) { setY1(y); }
-    void setZ(const double z) { setZ1(z); }
+    void SetX(const double x) { SetX1(x); }
+    void SetY(const double y) { SetY1(y); }
+    void SetZ(const double z) { SetZ1(z); }
 
-    double getCoordinate(Coordinate coordinate) const
+    double GetCoordinate(Coordinate coordinate) const
     {
-        return getEndCoordinate(coordinate);
+        return GetEndCoordinate(coordinate);
     }
 };
 
